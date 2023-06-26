@@ -31,6 +31,7 @@ func main() {
 
 	//using :=
 	name := "Magesh" //shortcut for line 28
+	name += " Kuppan"
 	fmt.Printf("Hi %s, Have a nice day!\n", name)
 
 	//cannot have unused variables
