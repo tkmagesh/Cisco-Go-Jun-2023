@@ -2,6 +2,9 @@
 
 ## Instructor ##
 - Magesh Kuppan
+- tkmagesh77@gmail.com
+- 99019-11221
+- https://linkedin.com/in/tkmagesh
 
 ## Schedule ##
 - Commence      : 09:00 AM
@@ -17,3 +20,11 @@
 
 ### Software Requirements - Verification ###
 - \> go version
+
+## Methodology ##
+- No powerpoints
+- 100% code driven class
+- Code from the class IS the deliverable
+
+## Repository ##
+- https://github.com/tkmagesh/cisco-go-jun-2023
