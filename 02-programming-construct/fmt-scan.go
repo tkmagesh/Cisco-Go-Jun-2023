@@ -13,7 +13,7 @@ func main() {
 	var fname, lname string
 	fmt.Println("Enter your firstname & lastname")
 	fmt.Scanln(&fname, &lname)
-	fmt.Scanf("%s %s\n", &fname, &lname)
+	fmt.Printf("%s %s\n", fname, lname)
 
 	/*
 		fmt.Println("Enter your lastname, firstname")
