@@ -9,6 +9,7 @@ func main() {
 	fmt.Println(sum(10, 20))
 	fmt.Println(sum(10, 20, 30, 40))
 	fmt.Println(sum(10, 20, 30, 40, 50))
+	fmt.Println(sum(10, 20, 30, 40, 50))
 }
 
 func sum(nos ...int) int {
