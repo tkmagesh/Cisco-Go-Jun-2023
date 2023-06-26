@@ -30,7 +30,7 @@ func main() {
 	*/
 
 	//using :=
-	name := "Magesh"
+	name := "Magesh" //shortcut for line 28
 	fmt.Printf("Hi %s, Have a nice day!\n", name)
 
 	//cannot have unused variables
