@@ -32,7 +32,17 @@
 # Who Go? #
 1. Ease of use
     - Simpler than C & C++
-
+    - No classes (only structs)
+    - No inheritance (only composition)
+    - No reference types (everything is a value)
+    - No exceptions (only errors)
+    - No try-catch-finally construct
+    - No access modifiers (private, public etc)
+    - No pointer arithmatic
+    - No implicit type conversion
+    - No function overloading
+    - No operator overloading
+    
 2. Performance
     - Compiled to NATIVE CODE
     - Supports cross platform compilation
