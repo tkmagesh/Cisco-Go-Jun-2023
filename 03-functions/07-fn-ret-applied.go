@@ -56,6 +56,9 @@ func main() {
 
 	getLogOperation(getProfiledOperation(add))(100, 200)
 	getLogOperation(getProfiledOperation(subtract))(100, 200)
+	getLogOperation(getProfiledOperation(func(x, y int) {
+		fmt.Println("Multiply result :", x*y)
+	}))(100, 200)
 }
 
 //v5
