@@ -28,3 +28,28 @@
 
 ## Repository ##
 - https://github.com/tkmagesh/cisco-go-jun-2023
+
+# Who Go? #
+1. Ease of use
+    - Simpler than C & C++
+
+2. Performance
+    - Compiled to NATIVE CODE
+    - Supports cross platform compilation
+    - Performance comparable to C++
+
+3. Less resources
+    - No need for Runtime (JVM / CLR)
+    - No need for Web/App servers
+    
+4. Concurrency Support
+    - Built in Scheduler (N:M scheduler where N = # of goroutines and M = # of OS threads)
+    - A concurrent operation is represented as a goroutine
+    - A goroutine will ONLY need a min of 4 KB of memory
+    - The builtin scheduler may schedule multiple goroutines to be scheduled for execution using the same OS thread
+    - Concurrency support is built in the language
+        - go keyword, channel data type (chan), channel operator (<-), range, select-case constructs
+    - SDK API support
+        - sync package
+        - sync/atomic package
+
