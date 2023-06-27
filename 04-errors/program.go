@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"runtime/debug"
 )
 
 var ErrDivideByZeroErro error = errors.New("cannot divide by zero")
@@ -16,6 +17,7 @@ func main() {
 	}
 	if err != nil {
 		fmt.Println("Something went wrong :", err)
+
 		return
 	}
 	fmt.Printf("Dividing 100 by %d, quotient = %d and remainder = %d\n", divisor, q, r)
@@ -35,6 +37,7 @@ func divide(x, y int) (int, int, error) {
 func divide(x, y int) (quotient, remainder int, err error) {
 	if y == 0 {
 		err = ErrDivideByZeroErro
+		debug.PrintStack()
 		return
 	}
 	quotient, remainder = x/y, x%y
