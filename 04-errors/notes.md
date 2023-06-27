@@ -4,3 +4,8 @@
 - How to create an error?
     - errors.New()
     - fmt.Errorf()
+- Other utilities
+    - errors.Join()
+    - errors.Unwrap()
+    - errors.Is()
+    - errors.As()

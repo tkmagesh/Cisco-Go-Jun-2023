@@ -63,4 +63,19 @@
         - sync package
         - sync/atomic package
 
-## Intro ##
+## Day-01 ##
+- Intro
+- Program Structure
+- Data Types
+- Programming Constructs
+- Functions
+
+## Day-02 ##
+- error handling
+- deferred functions
+- panic & recovery
+- pointers
+- collections
+- structs 
+- methods
+- interfaces
