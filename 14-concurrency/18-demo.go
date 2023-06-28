@@ -32,7 +32,8 @@ func generateFib(stopCh <-chan struct{}) <-chan int {
 			select {
 			case <-stopCh:
 				break LOOP
-			case ch <- x:
+			default:
+				ch <- x
 				time.Sleep(500 * time.Millisecond)
 				x, y = y, x+y
 			}
