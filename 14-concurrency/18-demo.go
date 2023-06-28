@@ -10,19 +10,20 @@ import (
 func main() {
 	stopCh := make(chan struct{})
 	fmt.Println("Hit ENTER to stop....")
-	go func() {
-		fmt.Scanln()
-		// stopCh <- struct{}{}
-		close(stopCh)
-	}()
-
+	go notifyStop(stopCh)
 	ch := generateFib(stopCh)
-
 	for val := range ch {
 		fmt.Println(val)
 	}
 }
-func generateFib(stopCh chan struct{}) chan int {
+
+func notifyStop(ch chan<- struct{}) {
+	fmt.Scanln()
+	ch <- struct{}{}
+	// close(ch)
+}
+
+func generateFib(stopCh <-chan struct{}) <-chan int {
 	ch := make(chan int)
 	go func() {
 		x, y := 0, 1

@@ -11,13 +11,16 @@ import (
 // consumer
 func main() {
 	ch := fn()
+	/* go func() {
+		ch <- 100
+	}() */
 	for val := range ch {
 		fmt.Println(val)
 	}
 }
 
 // producer
-func fn() chan int {
+func fn() <-chan int {
 	ch := make(chan int)
 	go func() {
 		count := rand.Intn(20)
