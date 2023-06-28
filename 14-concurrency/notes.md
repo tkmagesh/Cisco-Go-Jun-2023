@@ -15,3 +15,4 @@
     - A RECEIVE operation is ALWAYS a blocking operation
     - A SEND operation is BLOCKED until a RECEIVE operation is initiated
 
+![image channel-behaviors](./channel-behavior.png)
